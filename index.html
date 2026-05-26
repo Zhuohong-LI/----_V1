@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写作盲盒</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card">
+      <header class="card-header">
+        <h1>写作盲盒</h1>
+        <p class="subtitle">不喜欢就摇到喜欢为止</p>
+      </header>
+      <div id="questionDisplay" class="question-display" aria-live="polite">
+        点击下面按钮，抽取今天的写作题目
+      </div>
+      <button id="rollBtn" class="roll-button" type="button">🎲 再摇一次</button>
+    </section>
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/blindbox.js"></script>
+</body>
+</html>
