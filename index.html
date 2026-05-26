@@ -17,10 +17,20 @@
         点击下面按钮，抽取今天的写作题目
       </div>
       <button id="rollBtn" class="roll-button" type="button">🎲 再摇一次</button>
+
+      <textarea id="writingArea" class="writing-area" placeholder="把你想到的写在这里..."></textarea>
+
+      <div class="action-row">
+        <button id="saveBtn" class="action-button" type="button">💾 保存本文</button>
+        <button id="historyBtn" class="action-button" type="button" onclick="window.location.href='history.html'">📋 查看历史</button>
+      </div>
+
+      <div id="messageArea" class="message-area" aria-live="polite"></div>
     </section>
   </main>
 
   <script src="js/questions.js"></script>
+  <script src="js/storage.js"></script>
   <script src="js/blindbox.js"></script>
 </body>
 </html>

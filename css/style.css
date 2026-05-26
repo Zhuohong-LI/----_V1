@@ -83,3 +83,97 @@ body {
   color: #8c8c8c;
   font-size: 0.92rem;
 }
+
+.writing-area {
+  width: 100%;
+  min-height: 180px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid #d8d0c6;
+  border-radius: 16px;
+  font: inherit;
+  line-height: 1.6;
+  color: #2c3e2f;
+  resize: vertical;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.writing-area:focus {
+  border-color: #d4a373;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.18);
+}
+
+.action-buttons,
+.action-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.action-button {
+  flex: 1;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background: #eef0ea;
+  color: #2c3e2f;
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.action-button:hover {
+  background: #e1e5dc;
+}
+
+#messageArea {
+  min-height: 24px;
+  margin-top: 14px;
+  color: #2f855a;
+  font-size: 0.95rem;
+}
+
+.history-list {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.history-item {
+  margin-bottom: 16px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #f8f6f1;
+}
+
+.history-content {
+  white-space: pre-wrap;
+}
+
+.delete-btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background: #e57373;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #c94f4f;
+}
+
+@media (max-width: 520px) {
+  .action-buttons,
+  .action-row {
+    flex-wrap: wrap;
+  }
+
+  .action-button {
+    flex: 1 1 100%;
+  }
+}
